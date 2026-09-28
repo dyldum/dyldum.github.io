@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dylan Lyons | Developer</title>
+  <meta name="description" content="Dylan Lyons, computer science student at the University of Winchester. Web apps, APIs and tools.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress"></div>
+  <div class="backdrop"></div>
+  <div class="glow" id="glow"></div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">DL<span>.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="cv.pdf" class="btn btn-sm btn-outline" target="_blank">Résumé</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <p class="badge mono"><span class="dot"></span>Open to internships &amp; freelance work</p>
+        <h1>
+          Hi, I'm <span class="grad">Dylan</span>.<br>
+          I build
+          <span class="typed"><span id="typed">fast web apps</span><span class="caret">_</span></span>
+        </h1>
+        <p class="lead">
+          Third year Computer Science student at the University of Winchester. I like making
+          software that's quick, clean and actually pleasant to use, from the
+          interface down to the API behind it.
+        </p>
+        <div class="actions">
+          <a href="#projects" class="btn btn-solid">See my work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch →</a>
+        </div>
+      </div>
+
+      <div class="term" id="term">
+        <div class="term-bar"><i></i><i></i><i></i><span>guest@dylan: ~</span></div>
+        <div class="term-body" id="termBody">
+          <div id="termOut"></div>
+          <form class="term-line" id="termForm">
+            <label for="termIn">~ $</label>
+            <input id="termIn" autocomplete="off" spellcheck="false" aria-label="Terminal">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2 class="heading"><span class="mono">01</span>About me</h2>
+      <div class="about">
+        <div>
+          <p>
+            I'm a CS student who cares about building things people enjoy using.
+            What got me hooked on programming is computational thinking: breaking a
+            problem down and then chasing a better solution than the first one that works.
+          </p>
+          <p>
+            When I'm not coding I'm usually boxing, training for my next marathon or cooking.
+          </p>
+          <ul class="facts mono">
+            <li><span>Based in</span>Winchester, UK</li>
+            <li><span>Local time</span><time id="clock">--:--</time></li>
+            <li><span>Studying</span>BSc Computer Science</li>
+            <li><span>Graduating</span>2027</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mono label">// stack</h3>
+          <div class="tags">
+            <span>JavaScript</span><span>TypeScript</span><span>React</span>
+            <span>Node.js</span><span>Python</span><span>Java</span>
+            <span>SQL</span><span>PostgreSQL</span><span>Docker</span>
+            <span>Git</span><span>Linux</span><span>AWS</span>
+            <span>Machine Learning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <h2 class="heading"><span class="mono">02</span>What I do</h2>
+      <div class="cards" id="cards">
+        <article class="card">
+          <div class="icon">⌘</div>
+          <h3>Web development</h3>
+          <p>Responsive, accessible sites and web apps that load fast on any device.</p>
+        </article>
+        <article class="card">
+          <div class="icon">⚙</div>
+          <h3>Backend &amp; APIs</h3>
+          <p>REST APIs, databases and auth. The unglamorous stuff that keeps everything running.</p>
+        </article>
+        <article class="card">
+          <div class="icon">◐</div>
+          <h3>UI / UX design</h3>
+          <p>Interfaces that look sharp and make sense, from rough wireframes to working prototypes.</p>
+        </article>
+        <article class="card">
+          <div class="icon">⌬</div>
+          <h3>Automation</h3>
+          <p>Python scripts and small tools that turn an hour of clicking into a few seconds.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2 class="heading"><span class="mono">03</span>Projects</h2>
+
+      <div class="projects">
+        <article class="project">
+          <div class="shot" style="--h: 155"><span class="mono">python-coursework</span></div>
+          <div>
+            <p class="kicker mono">Python · 2026</p>
+            <h3>Algorithms &amp; Design Patterns GUI</h3>
+            <p>A desktop app that puts a range of algorithms and design patterns behind one interface, so you can run them and see how each one works.</p>
+            <div class="tags sm"><span>Python</span><span>GUI</span><span>OOP</span></div>
+            <div class="links mono">
+              <a href="https://github.com/dyldum/python-coursework" target="_blank">Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="shot" style="--h: 175"><span class="mono">tictactoe</span></div>
+          <div>
+            <p class="kicker mono">Python · 2024</p>
+            <h3>Tic-Tac-Toe</h3>
+            <p>A playable noughts and crosses game written in Python.</p>
+            <div class="tags sm"><span>Python</span></div>
+            <div class="links mono">
+              <a href="https://github.com/dyldum/TicTacToe" target="_blank">Code ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="center"><a href="https://github.com/dyldum" class="btn btn-ghost" target="_blank">More on GitHub →</a></p>
+    </section>
+
+    <section class="section" id="contact">
+      <h2 class="heading"><span class="mono">04</span>Say hello</h2>
+      <div class="contact">
+        <div>
+          <p>Internship, freelance job or just want to talk tech? Drop me a message and I'll usually get back to you within a day.</p>
+          <ul class="socials">
+            <li><span class="mono">email</span><a href="mailto:ddlyons2@hotmail.com">ddlyons2@hotmail.com</a></li>
+            <li><span class="mono">github</span><a href="https://github.com/dyldum" target="_blank">github.com/dyldum</a></li>
+            <!-- add once linkedin is verified
+            <li><span class="mono">linkedin</span><a href="https://linkedin.com/in/YOUR-HANDLE" target="_blank">linkedin.com/in/YOUR-HANDLE</a></li>
+            -->
+          </ul>
+        </div>
+
+        <!-- formspree.io, swap in your form id -->
+        <form class="form" id="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <label>Name <input name="name" required></label>
+          <label>Email <input name="email" type="email" required></label>
+          <label>Message <textarea name="message" rows="5" required></textarea></label>
+          <button class="btn btn-solid">Send</button>
+          <p class="status mono" id="status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mono">© <span id="year"></span> Dylan Lyons. Hand built, no frameworks.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
